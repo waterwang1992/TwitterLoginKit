@@ -1,0 +1,10 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'http://git.jollycorp.com:8088/mobile/JollySpecs.git'
+platform :ios, '8.0'
+
+target 'TestTwitterKit' do
+    use_frameworks!
+    #   pod 'TwitterKit'
+end
+
+
