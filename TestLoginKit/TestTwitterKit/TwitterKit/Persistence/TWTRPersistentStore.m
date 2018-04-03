@@ -241,9 +241,9 @@
     NSFileManager *fileManager = [NSFileManager defaultManager];
     BOOL exists = [fileManager fileExistsAtPath:[self path] isDirectory:&isDirectory];
     if (!exists || !isDirectory) {
-//        if (![fileManager createDirectoryAtPath:[self path] withIntermediateDirectories:YES attributes:@{} error:NULL]) {
+        if (![fileManager createDirectoryAtPath:[self path] withIntermediateDirectories:YES attributes:@{} error:NULL]) {
             return NO;
-//        }
+        }
     }
 
     return YES;
