@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TestTWTLoginKit"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "A short description of TestTWTLoginKit.A short description of TestTWTLoginKitA short description of TestTWTLoginKitA short description of TestTWTLoginKitA short description of TestTWTLoginKit"
 
   # This description is used to generate tags and improve search results.
