@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TestTWTLoginKit"
-  s.version      = "0.0.9"
+  s.version      = "0.0.10"
   s.summary      = "A short description of TestTWTLoginKit.A short description of TestTWTLoginKitA short description of TestTWTLoginKitA short description of TestTWTLoginKitA short description of TestTWTLoginKit"
 
   # This description is used to generate tags and improve search results.
@@ -79,7 +79,8 @@ Pod::Spec.new do |s|
   #
 
    s.source       = { :git => "https://github.com/waterwang1992/TwitterLoginKit.git", :tag => "#{s.version}" }
-
+   
+   s.source_files = 'TestLoginKit/TestTwitterKit/**/*.{h,m}'
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -89,23 +90,6 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.subspec 'libextobjc' do |ss| 
-      ss.public_header_files = 'TestLoginKit/TestTwitterKit/libextobjc/**/*.h'
-      ss.source_files = 'TestLoginKit/TestTwitterKit/libextobjc/**/*.{h,m}'
-  end
-
-  s.subspec 'TwitterCore' do |ss| 
-      ss.public_header_files = 'TestLoginKit/TestTwitterKit/TwitterCore/**/*.h'
-      ss.source_files = 'TestLoginKit/TestTwitterKit/TwitterCore/**/*.{h,m}'
-      ss.dependency 'TestLoginKit/TestTwitterKit/libextobjc'
-  end
-
-  s.subspec 'TwitterKit' do |ss| 
-  		ss.public_header_files = 'TestLoginKit/TestTwitterKit/TwitterKit/**/*.h'
-  		ss.source_files = 'TestLoginKit/TestTwitterKit/TwitterKit/**/*.{h,m}'
-      ss.dependency 'TestLoginKit/TestTwitterKit/TwitterCore'
-      ss.dependency 'TestLoginKit/TestTwitterKit/libextobjc'
-  end
 
      
 
