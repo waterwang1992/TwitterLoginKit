@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TestTWTLoginKit"
-  s.version      = "0.0.10"
+  s.version      = "0.1.0"
   s.summary      = "A short description of TestTWTLoginKit.A short description of TestTWTLoginKitA short description of TestTWTLoginKitA short description of TestTWTLoginKitA short description of TestTWTLoginKit"
 
   # This description is used to generate tags and improve search results.
@@ -79,7 +79,7 @@ Pod::Spec.new do |s|
   #
 
    s.source       = { :git => "https://github.com/waterwang1992/TwitterLoginKit.git", :tag => "#{s.version}" }
-   
+
    s.source_files = 'TestLoginKit/TestTwitterKit/**/*.{h,m}'
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
