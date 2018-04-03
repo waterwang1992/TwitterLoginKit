@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TestTWTLoginKit"
-  s.version      = "0.0.5"
+  s.version      = "0.0.6"
   s.summary      = "A short description of TestTWTLoginKit.A short description of TestTWTLoginKitA short description of TestTWTLoginKitA short description of TestTWTLoginKitA short description of TestTWTLoginKit"
 
   # This description is used to generate tags and improve search results.
@@ -24,8 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC
-                   DESC
+  s.description  = "A short description of TestTWTLoginKit.A short description of TestTWTLoginKitA short descrip"
 
   s.homepage     = "https://github.com/waterwang1992/TwitterLoginKit"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
