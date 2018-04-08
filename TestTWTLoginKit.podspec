@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
 
    s.source       = { :git => "https://github.com/waterwang1992/TwitterLoginKit.git", :tag => "#{s.version}" }
 
-   s.source_files = 'TestTwitterKit','TestLoginKit/TestTwitterKit/**/*.{h,m}'
+   s.source_files = "TestLoginKit/TestTwitterKit/**/*.{h,m}"
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

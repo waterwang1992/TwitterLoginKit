@@ -968,17 +968,17 @@
 		C5092A352079FCC900327CEA /* TwitterCore */ = {
 			isa = PBXGroup;
 			children = (
-				C5092A362079FCC900327CEA /* TWTRCoreConstants.h */,
+				C5092AC12079FCC900327CEA /* Analytics */,
 				C5092A372079FCC900327CEA /* Identity */,
 				C5092A672079FCC900327CEA /* Networking */,
 				C5092AA02079FCC900327CEA /* Resources */,
-				C5092AA82079FCC900327CEA /* TWTRConstants.m */,
-				C5092AA92079FCC900327CEA /* Utilities */,
-				C5092ABD2079FCC900327CEA /* TWTRCoreConstants.m */,
 				C5092ABE2079FCC900327CEA /* Supporting Files */,
 				C5092AC02079FCC900327CEA /* TwitterCore.h */,
-				C5092AC12079FCC900327CEA /* Analytics */,
 				C5092AE02079FCC900327CEA /* TWTRConstants.h */,
+				C5092AA82079FCC900327CEA /* TWTRConstants.m */,
+				C5092A362079FCC900327CEA /* TWTRCoreConstants.h */,
+				C5092ABD2079FCC900327CEA /* TWTRCoreConstants.m */,
+				C5092AA92079FCC900327CEA /* Utilities */,
 			);
 			path = TwitterCore;
 			sourceTree = "<group>";
@@ -1047,40 +1047,40 @@
 		C5092A672079FCC900327CEA /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				C5092A902079FCC900327CEA /* API */,
+				C5092A6E2079FCC900327CEA /* Pipeline */,
+				C5092A7E2079FCC900327CEA /* Security */,
+				C5092A9B2079FCC900327CEA /* ThirdParty */,
+				C5092A992079FCC900327CEA /* TwitterAppAPIClient+Subclasses.h */,
+				C5092A6A2079FCC900327CEA /* TWTRAPIDateSync.h */,
+				C5092A882079FCC900327CEA /* TWTRAPIDateSync.m */,
+				C5092A792079FCC900327CEA /* TWTRAPINetworkErrorsShim.h */,
+				C5092A872079FCC900327CEA /* TWTRAPINetworkErrorsShim.m */,
+				C5092A8C2079FCC900327CEA /* TWTRAPIServiceConfig.h */,
 				C5092A682079FCC900327CEA /* TWTRAPIServiceConfig.m */,
 				C5092A692079FCC900327CEA /* TWTRAPIServiceConfigRegistry.h */,
-				C5092A6A2079FCC900327CEA /* TWTRAPIDateSync.h */,
-				C5092A6B2079FCC900327CEA /* TWTRAuthConfigStore_Private.h */,
-				C5092A6C2079FCC900327CEA /* TWTRUserAPIClient.h */,
-				C5092A6D2079FCC900327CEA /* TWTRMultipartFormDocument.h */,
-				C5092A6E2079FCC900327CEA /* Pipeline */,
-				C5092A792079FCC900327CEA /* TWTRAPINetworkErrorsShim.h */,
-				C5092A7A2079FCC900327CEA /* TWTRNetworkingUtil.m */,
-				C5092A7B2079FCC900327CEA /* TWTRAuthSession.h */,
-				C5092A7C2079FCC900327CEA /* TWTRAuthConfigSessionsValidator.m */,
-				C5092A7D2079FCC900327CEA /* TWTRAuthConfig.m */,
-				C5092A7E2079FCC900327CEA /* Security */,
-				C5092A832079FCC900327CEA /* TWTRAuthConfigStore.m */,
-				C5092A842079FCC900327CEA /* TWTRNetworking.m */,
-				C5092A852079FCC900327CEA /* TWTRNetworkingConstants.m */,
-				C5092A862079FCC900327CEA /* TWTRAppAPIClient.h */,
-				C5092A872079FCC900327CEA /* TWTRAPINetworkErrorsShim.m */,
-				C5092A882079FCC900327CEA /* TWTRAPIDateSync.m */,
-				C5092A892079FCC900327CEA /* TWTRMultipartFormDocument.m */,
-				C5092A8A2079FCC900327CEA /* TWTRUserAPIClient.m */,
 				C5092A8B2079FCC900327CEA /* TWTRAPIServiceConfigRegistry.m */,
-				C5092A8C2079FCC900327CEA /* TWTRAPIServiceConfig.h */,
-				C5092A8D2079FCC900327CEA /* TWTRAuthConfig.h */,
-				C5092A8E2079FCC900327CEA /* TWTRAuthConfigSessionsValidator.h */,
-				C5092A8F2079FCC900327CEA /* TWTRNetworkingUtil.h */,
-				C5092A902079FCC900327CEA /* API */,
-				C5092A972079FCC900327CEA /* TWTRNetworking.h */,
-				C5092A982079FCC900327CEA /* TWTRAuthConfigStore.h */,
-				C5092A992079FCC900327CEA /* TwitterAppAPIClient+Subclasses.h */,
+				C5092A862079FCC900327CEA /* TWTRAppAPIClient.h */,
 				C5092A9A2079FCC900327CEA /* TWTRAppAPIClient.m */,
-				C5092A9B2079FCC900327CEA /* ThirdParty */,
-				C5092A9E2079FCC900327CEA /* TWTRNetworkingConstants.h */,
+				C5092A8D2079FCC900327CEA /* TWTRAuthConfig.h */,
+				C5092A7D2079FCC900327CEA /* TWTRAuthConfig.m */,
 				C5092A9F2079FCC900327CEA /* TWTRAuthConfigSessionsValidator_Private.h */,
+				C5092A8E2079FCC900327CEA /* TWTRAuthConfigSessionsValidator.h */,
+				C5092A7C2079FCC900327CEA /* TWTRAuthConfigSessionsValidator.m */,
+				C5092A6B2079FCC900327CEA /* TWTRAuthConfigStore_Private.h */,
+				C5092A982079FCC900327CEA /* TWTRAuthConfigStore.h */,
+				C5092A832079FCC900327CEA /* TWTRAuthConfigStore.m */,
+				C5092A7B2079FCC900327CEA /* TWTRAuthSession.h */,
+				C5092A6D2079FCC900327CEA /* TWTRMultipartFormDocument.h */,
+				C5092A892079FCC900327CEA /* TWTRMultipartFormDocument.m */,
+				C5092A972079FCC900327CEA /* TWTRNetworking.h */,
+				C5092A842079FCC900327CEA /* TWTRNetworking.m */,
+				C5092A9E2079FCC900327CEA /* TWTRNetworkingConstants.h */,
+				C5092A852079FCC900327CEA /* TWTRNetworkingConstants.m */,
+				C5092A8F2079FCC900327CEA /* TWTRNetworkingUtil.h */,
+				C5092A7A2079FCC900327CEA /* TWTRNetworkingUtil.m */,
+				C5092A6C2079FCC900327CEA /* TWTRUserAPIClient.h */,
+				C5092A8A2079FCC900327CEA /* TWTRUserAPIClient.m */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -1088,16 +1088,16 @@
 		C5092A6E2079FCC900327CEA /* Pipeline */ = {
 			isa = PBXGroup;
 			children = (
-				C5092A6F2079FCC900327CEA /* TWTRURLSessionDelegate.h */,
-				C5092A702079FCC900327CEA /* TWTRNetworkingPipelinePackage.h */,
 				C5092A712079FCC900327CEA /* TWTRNetworkingPipeline.h */,
-				C5092A722079FCC900327CEA /* TWTRRequestSigningOperation.h */,
-				C5092A732079FCC900327CEA /* TWTRNetworkingPipelineQueue.h */,
-				C5092A742079FCC900327CEA /* TWTRURLSessionDelegate.m */,
 				C5092A752079FCC900327CEA /* TWTRNetworkingPipeline.m */,
+				C5092A702079FCC900327CEA /* TWTRNetworkingPipelinePackage.h */,
 				C5092A762079FCC900327CEA /* TWTRNetworkingPipelinePackage.m */,
-				C5092A772079FCC900327CEA /* TWTRRequestSigningOperation.m */,
+				C5092A732079FCC900327CEA /* TWTRNetworkingPipelineQueue.h */,
 				C5092A782079FCC900327CEA /* TWTRNetworkingPipelineQueue.m */,
+				C5092A722079FCC900327CEA /* TWTRRequestSigningOperation.h */,
+				C5092A772079FCC900327CEA /* TWTRRequestSigningOperation.m */,
+				C5092A6F2079FCC900327CEA /* TWTRURLSessionDelegate.h */,
+				C5092A742079FCC900327CEA /* TWTRURLSessionDelegate.m */,
 			);
 			path = Pipeline;
 			sourceTree = "<group>";
@@ -1105,10 +1105,10 @@
 		C5092A7E2079FCC900327CEA /* Security */ = {
 			isa = PBXGroup;
 			children = (
-				C5092A7F2079FCC900327CEA /* TWTRServerTrustEvaluator.m */,
-				C5092A802079FCC900327CEA /* TWTRX509Certificate.m */,
-				C5092A812079FCC900327CEA /* TWTRX509Certificate.h */,
 				C5092A822079FCC900327CEA /* TWTRServerTrustEvaluator.h */,
+				C5092A7F2079FCC900327CEA /* TWTRServerTrustEvaluator.m */,
+				C5092A812079FCC900327CEA /* TWTRX509Certificate.h */,
+				C5092A802079FCC900327CEA /* TWTRX509Certificate.m */,
 			);
 			path = Security;
 			sourceTree = "<group>";
@@ -1116,12 +1116,12 @@
 		C5092A902079FCC900327CEA /* API */ = {
 			isa = PBXGroup;
 			children = (
-				C5092A912079FCC900327CEA /* TWTRAPIConstantsUser.m */,
-				C5092A922079FCC900327CEA /* TWTRAPIConstants.m */,
-				C5092A932079FCC900327CEA /* TWTRAPIErrorCode.h */,
-				C5092A942079FCC900327CEA /* TWTRAPIConstantsUser.h */,
-				C5092A952079FCC900327CEA /* TWTRAPIErrorCode.m */,
 				C5092A962079FCC900327CEA /* TWTRAPIConstants.h */,
+				C5092A922079FCC900327CEA /* TWTRAPIConstants.m */,
+				C5092A942079FCC900327CEA /* TWTRAPIConstantsUser.h */,
+				C5092A912079FCC900327CEA /* TWTRAPIConstantsUser.m */,
+				C5092A932079FCC900327CEA /* TWTRAPIErrorCode.h */,
+				C5092A952079FCC900327CEA /* TWTRAPIErrorCode.m */,
 			);
 			path = API;
 			sourceTree = "<group>";
