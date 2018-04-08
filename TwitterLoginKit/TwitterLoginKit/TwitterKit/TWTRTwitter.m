@@ -415,16 +415,6 @@ static TWTRTwitter *sharedTwitter;
                     return [self.webAuthenticationFlow resumeAuthenticationWithRedirectURL:url];
                 }
             }
-        }else{
-            BOOL wasMobileSSO = [self.mobileSSO processRedirectURL:url];
-            if (!wasMobileSSO) {
-                BOOL isTokenValid = [self.mobileSSO verifyOauthTokenResponsefromURL:url];
-                if (isTokenValid) {
-                    // If it wasn't a Mobile SSO redirect, try to handle as
-                    // SFSafariViewController redirect
-                    return [self.webAuthenticationFlow resumeAuthenticationWithRedirectURL:url];
-                }
-            }
         }
     } else {
         // Fallback on earlier versions
