@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TestTWTLoginKit"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "A short description of TestTWTLoginKit.A short description of TestTWTLoginKitA short description of TestTWTLoginKitA short description of TestTWTLoginKitA short description of TestTWTLoginKit"
 
   # This description is used to generate tags and improve search results.
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   #
 
   # s.license      = "MIT (example)"
-   s.license      = { :type => "MIT", :file => "LICENSE" }
+  s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
   # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-   s.platform     = :ios, "8.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
@@ -78,9 +78,23 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-   s.source       = { :git => "https://github.com/waterwang1992/TwitterLoginKit.git", :tag => "#{s.version}" }
+  s.source = { :git => "https://github.com/waterwang1992/TwitterLoginKit.git", :tag => "#{s.version}" }
 
-   s.source_files = "TestLoginKit/TestTwitterKit/**/*.{h,m}"
+  s.source_files = "TestLoginKit/TestTwitterKit/**/*.{h,m}"
+  s.subspec 'libextobjc' do |ss|
+    ss.source_files = "TestLoginKit/TestTwitterKit/libextobjc/*.{h,m}"
+  end
+
+  s.subspec 'TwitterCore' do |ss|
+    ss.dependency "TestTWTLoginKit/libextobjc"
+    ss.source_files = 'TestLoginKit/TestTwitterKit/TwitterCore/**/*.{h,m}'
+  end
+
+  s.subspec 'TwitterKit' do |ss|
+    ss.dependency "TestTWTLoginKit/TwitterCore"
+    ss.source_files = 'TestLoginKit/TestTwitterKit/TwitterKit/**/*.{h,m}'
+  end
+
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -108,7 +122,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-   s.resources = "TestLoginKit/TestTwitterKit/TwitterKit/TwitterKitResources.bundle"
+  s.resources = "TestLoginKit/TestTwitterKit/TwitterKit/TwitterKitResources.bundle"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
@@ -132,7 +146,7 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-   s.requires_arc = true
+  s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
